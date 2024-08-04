@@ -1,0 +1,602 @@
+{
+  "name": "Датчик MODKAM Term 4Ch",
+  "manufacturer": "EfektaLab",
+  "model": "MODKAM_Term",
+  "manufacturerId": "EfektaLab for you",
+  "modelId": "MODKAM_Term",
+  "catalogId": -1,
+  "status": "Test",
+  "init": [
+     {
+      "zcl": [
+	    {
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0201_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0240_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0401_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0405_Custom",
+          "zclDataType": "UNSIGNED_8_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0406_Custom",
+          "zclDataType": "UNSIGNED_8_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0221_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0222_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 1,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0225_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0221_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0222_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 2,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0225_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0221_Custom",
+          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0222_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 3,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0225_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0220_Custom",
+          "zclDataType": "BOOLEAN"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0221_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0222_Custom",
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
+        },
+		{
+          "endpoint": 4,
+          "cluster": "0402_TemperatureMeasurement",
+          "attribute": "0225_Custom",
+          "zclDataType": "BOOLEAN"
+        }
+      ]
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0006_OnOff",
+        "attribute": "0000_OnOff"
+      },
+      "bind": true,
+	  "report": false
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "0006_OnOff",
+        "attribute": "0000_OnOff"
+      },
+      "bind": true,
+	  "report": false
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "0006_OnOff",
+        "attribute": "0000_OnOff"
+      },
+      "bind": true,
+	  "report": false
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "0006_OnOff",
+        "attribute": "0000_OnOff"
+      },
+      "bind": true,
+	  "report": false
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0007_LocalTime"
+      },
+      "bind": false,
+	  "report": false
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": false
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": false
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": false
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0000_MeasuredValue"
+      },
+      "bind": true,
+      "report": false
+    }
+  ],
+  "services": [
+    {
+      "type": "Switch",
+      "name": "Термоголовка 1Ch",
+      "characteristics": [
+        {
+          "type": "On",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0006_OnOff",
+            "attribute": "0000_OnOff"
+          }
+        }
+      ]
+    },
+	{
+      "type": "Switch",
+      "name": "Термоголовка 2Ch",
+      "characteristics": [
+        {
+          "type": "On",
+          "link": {
+            "endpoint": 2,
+            "cluster": "0006_OnOff",
+            "attribute": "0000_OnOff"
+          }
+        }
+      ]
+    },
+	{
+      "type": "Switch",
+      "name": "Термоголовка 3Ch",
+      "characteristics": [
+        {
+          "type": "On",
+          "link": {
+            "endpoint": 3,
+            "cluster": "0006_OnOff",
+            "attribute": "0000_OnOff"
+          }
+        }
+      ]
+    },
+	{
+      "type": "Switch",
+      "name": "Термоголовка 4Ch",
+      "characteristics": [
+        {
+          "type": "On",
+          "link": {
+            "endpoint": 4,
+            "cluster": "0006_OnOff",
+            "attribute": "0000_OnOff"
+          }
+        }
+      ]
+    },
+	{
+      "type": "TemperatureSensor",
+	  "name": "Температура 1Ch",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 1,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+	{
+      "type": "TemperatureSensor",
+	  "name": "Температура 2Ch",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 2,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+	{
+      "type": "TemperatureSensor",
+	  "name": "Температура 3Ch",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 3,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    },
+	{
+      "type": "TemperatureSensor",
+	  "name": "Температура 4Ch",
+      "characteristics": [
+        {
+          "type": "CurrentTemperature",
+          "link": {
+            "endpoint": 4,
+            "cluster": "0402_TemperatureMeasurement",
+            "attribute": "0000_MeasuredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "options": [
+    {
+        "link": {
+          "endpoint": 1,
+          "cluster": "000A_Time",
+          "attribute": "0201_Custom"
+        },
+        "name": "Интервал отправки отчетов, в секундах",
+        "type": "Integer",
+		"unit": "сек.",
+        "init": false,
+        "value": 15,
+        "minValue": 15,
+        "maxValue": 360,
+        "minStep": 1
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0401_Custom"
+      },
+      "name": "Включение ночного режима",
+	  "description": "Понижает установленные пороги термостатирования на 2°C",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0405_Custom"
+      },
+      "name": "Установка начала работы ночного режима",
+      "type": "Integer",
+      "init": false,
+      "value": 22,
+      "minValue": 0,
+      "maxValue": 23
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0406_Custom"
+      },
+      "name": "Установка конца работы ночного режима",
+      "type": "Integer",
+      "init": false,
+      "value": 6,
+      "minValue": 0,
+      "maxValue": 23
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "000A_Time",
+        "attribute": "0240_Custom"
+      },
+      "name": "Включение звукового оповещения о внештатных ситуациях",
+      "type": "Boolean",
+      "init": false,
+      "value": true
+    },
+	{
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0220_Custom"
+      },
+      "name": "Термостат 1Ch",
+      "description": "Активация режима работы реле как термостата, должны быть привязаны внешние датчики температуры.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0225_Custom"
+      },
+      "name": "Инвертирование Термостат 1Ch",
+	  "description": "Инвертирование логики работы, ...включить, если температура выше верхнего уровня / ...выключить, если выше верхнего уровня. Для использования с разными типами термоголовок NC, NO",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0221_Custom"
+      },
+      "name": "Термостат 1Ch, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 36,
+      "minValue": -30,
+      "maxValue": 120
+    },
+    {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0222_Custom"
+      },
+      "name": "Термостат 1Ch, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 16,
+      "minValue": -30,
+      "maxValue": 120
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0220_Custom"
+      },
+      "name": "Термостат 2Ch",
+      "description": "Активация режима работы реле как термостата, должны быть привязаны внешние датчики температуры.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0225_Custom"
+      },
+      "name": "Инвертирование Термостат 2Ch",
+	  "description": "Инвертирование логики работы, ...включить, если температура выше верхнего уровня / ...выключить, если выше верхнего уровня. Для использования с разными типами термоголовок NC, NO",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0221_Custom"
+      },
+      "name": "Термостат 2Ch, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 36,
+      "minValue": -30,
+      "maxValue": 120
+    },
+    {
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0222_Custom"
+      },
+      "name": "Термостат 2Ch, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 16,
+      "minValue": -30,
+      "maxValue": 120
+    },
+	{
+      "link": {
+        "endpoint": 3,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0220_Custom"
+      },
+      "name": "Термостат 3Ch",
+      "description": "Активация режима работы реле как термостата, должны быть привязаны внешние датчики температуры.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 3,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0225_Custom"
+      },
+      "name": "Инвертирование Термостат 3Ch",
+	  "description": "Инвертирование логики работы, ...включить, если температура выше верхнего уровня / ...выключить, если выше верхнего уровня. Для использования с разными типами термоголовок NC, NO",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 3,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0221_Custom"
+      },
+      "name": "Термостат 3Ch, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 36,
+      "minValue": -30,
+      "maxValue": 120
+    },
+    {
+      "link": {
+        "endpoint": 3,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0222_Custom"
+      },
+      "name": "Термостат 3Ch, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 16,
+      "minValue": -30,
+      "maxValue": 120
+    },
+	{
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0220_Custom"
+      },
+      "name": "Термостат 4Ch",
+      "description": "Активация режима работы реле как термостата, должны быть привязаны внешние датчики температуры.",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0225_Custom"
+      },
+      "name": "Инвертирование Термостат 4Ch",
+	  "description": "Инвертирование логики работы, ...включить, если температура выше верхнего уровня / ...выключить, если выше верхнего уровня. Для использования с разными типами термоголовок NC, NO",
+      "type": "Boolean",
+      "init": false,
+      "value": false
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0221_Custom"
+      },
+      "name": "Термостат 4Ch, верхняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 36,
+      "minValue": -30,
+      "maxValue": 120
+    },
+    {
+      "link": {
+        "endpoint": 4,
+        "cluster": "0402_TemperatureMeasurement",
+        "attribute": "0222_Custom"
+      },
+      "name": "Термостат 4Ch, нижняя граница",
+      "type": "Integer",
+      "init": false,
+      "value": 16,
+      "minValue": -30,
+      "maxValue": 120
+    }
+  ]
+}
