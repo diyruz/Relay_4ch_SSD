@@ -1,1 +1,1 @@
-# Relay_4ch_SSD
+# MODKAM Relay 4ch SSD Zigbee
