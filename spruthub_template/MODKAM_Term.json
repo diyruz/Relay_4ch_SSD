@@ -97,7 +97,7 @@
           "endpoint": 3,
           "cluster": "0402_TemperatureMeasurement",
           "attribute": "0221_Custom",
-          "zclDataType": "UNSIGNED_16_BIT_INTEGER"
+          "zclDataType": "SIGNED_16_BIT_INTEGER"
         },
 		{
           "endpoint": 3,
