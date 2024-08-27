@@ -1,5 +1,9 @@
 # MODKAM Relay 4ch SSD Zigbee
 
+Project Chat: https://t.me/zigbeer
+
+Description: https://habr.com/ru/articles/834334/
+
 ![MODKAM Relay 4ch SSD Zigbee](https://raw.githubusercontent.com/diyruz/Relay_4ch_SSD/main/images/01.jpg) 
 
 ![MODKAM Relay 4ch SSD Zigbee](https://raw.githubusercontent.com/diyruz/Relay_4ch_SSD/main/images/004.png) 
