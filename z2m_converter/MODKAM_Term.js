@@ -161,21 +161,13 @@ const definition = {
             attribute: {ID: 0x0240, type: 0x10},
             description: 'Alarm',
         }),
-        binary({
-            name: 'enable_сontrol_extrelay',
-            valueOn: ['ON', 1],
-            valueOff: ['OFF', 0],
-            cluster: 'genOnOff',
-            attribute: {ID: 0x0235, type: 0x10},
-            description: 'External relay control',
-        }),
     ],
-    configure: async (device, coordinatorEndpoint, logger) => {
-        await reporting.bind(device.getEndpoint(1), coordinatorEndpoint, ['genTime', 'genOnOff', 'msTemperatureMeasurement']);
-        await reporting.bind(device.getEndpoint(2), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
-        await reporting.bind(device.getEndpoint(3), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
-        await reporting.bind(device.getEndpoint(4), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
-    },
+	configure: async (device, coordinatorEndpoint, logger) => {
+            await reporting.bind(device.getEndpoint(1), coordinatorEndpoint, ['genTime', 'genOnOff', 'msTemperatureMeasurement']);
+            await reporting.bind(device.getEndpoint(2), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
+			await reporting.bind(device.getEndpoint(3), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
+			await reporting.bind(device.getEndpoint(4), coordinatorEndpoint, ['genOnOff', 'msTemperatureMeasurement']);
+        },
 };
 
 module.exports = definition;
